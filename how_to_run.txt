@@ -1,0 +1,4 @@
+The Server will run only on http://localhost:8000/
+
+NOTE => To start project -> django-admin.py startproject ImageN
+        To start app -> python manage.py startapp MineText
