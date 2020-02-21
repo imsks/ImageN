@@ -9,7 +9,6 @@ class HomepageView(ListView):
     template_name = 'index.html'
 
 class CreatePostView(CreateView):
-
     model = Post
     form_class = PostForm
     template_name = 'post.html'

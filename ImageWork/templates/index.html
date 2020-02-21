@@ -1,8 +1,22 @@
-<h1>Django Image Uploading</h1>
-<ul>
-  {% for post in object_list %}
-    <h2>{{ post.title }}</h2>
-    <img src="{{ post.cover.url}}" alt="{{ post.title }}">
-    <h1>Mined Text - {{ post.mined_text }}</h1>
-  {% endfor %}
-</ul>
+<html>
+  <head>
+    <title>Django Images</title>
+  </head>
+  <body>
+    <h1>Django Image Uploading</h1>
+    <ul>
+      {% for post in object_list %}
+        <h2>{{ post.title }}</h2>
+        <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+        <h1>Mined Text - {{ post.mined_text }}</h1>
+      {% endfor %}
+    </ul>
+    <h1 id="name">Sachin</h1>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+    $("#name").change(function () {
+      console.log('hss');
+    });
+  </script>
+  </body>
+</html>
