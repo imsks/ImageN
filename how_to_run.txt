@@ -1,4 +1,22 @@
 The Server will run only on http://localhost:8000/
 
-NOTE => To start project -> django-admin.py startproject ImageN
+
+How to launch =>
+STEP 1: Install Python => https://www.python.org/downloads/
+STEP 2: Check if python has been installed correctly -> python --version will show version or FIX THE ISSUE
+STEP 3: Install Django and other packages => pip install -r requirements.txt
+STEP 4: Check for Django => python -m django --version will show version or FIX THE ISSUE
+STEP 5: Run the project => python manage.py runserver =>
+        The Server will run only on http://localhost:8000/
+        On the home page you will see the images(Once uploaded) =>
+        To upload the images go to http://localhost:8000/post => fill the form and submit. You will be redirected to the home page
+We are half way there -> NOW MAYBE YOU WILL SEE THE ERRORS in STEP 5 once submitting the data
+Because pytesseract library in python is not installed on your system.
+STEP 6: To install pytesseract => Go to Downloadable packages and downloads the tesseract file given inside
+STEP 7: Run Django server again using python manage.py runserver.
+
+
+
+
+ONLY FOR DEVELOPMENT => To start project -> django-admin.py startproject ImageN
         To start app -> python manage.py startapp MineText
